@@ -8,11 +8,11 @@
 ::: warning Codec is **not** responsible for:
 
 - **Serialization** *(e.g., JSON, TOML)*
-    - Use the [serde](<../SerDe/index.md>) library
+    - Use the [serde](<../serde/index.md>) library
 - **Compression** *(e.g., LZ4, Zstd)*
-    - Use the [cede](<../CeDe/index.md>) library
+    - Use the [cede](<../cede/index.md>) library
 - **Cryptography** *(e.g., hashing, encryption)*
-    - Use the [crypto](<../../runtime/Crypto/index.md>) library
+    - Use the [crypto](<../../runtime/crypto/index.md>) library
 :::
 
 ## Purpose
