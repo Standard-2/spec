@@ -13,8 +13,6 @@ let this: Record<string, unknown>
 ```lua
 local env = include("@runtime/env")
 
-print(env.this.env) -- env
-
 env.helloworld = "Hello, World!"
 print(env.this.helloworld) -- Hello, World!
 ```

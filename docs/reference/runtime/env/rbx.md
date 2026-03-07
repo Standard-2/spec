@@ -1,6 +1,6 @@
 # env.rbx
 
-Returns the entire datamodel environment. This is **not** isolated from `env.this`, any changes made here are reflected to the custom lua state environment.
+Returns the entire datamodel-create lua state environment.
 
 ## Usage
 
@@ -29,5 +29,4 @@ print(env.rbx.print) -- 1
 
 env.helloworld = "Hello, World!"
 print(env.rbx.helloworld) -- Hello, World!
-print(env.this.helloworld) -- Hello, World!
 ```
