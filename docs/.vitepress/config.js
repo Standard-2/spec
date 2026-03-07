@@ -5,7 +5,7 @@ export default withSidebar(
 	defineConfig({
 		title: "S2",
 		description: "The S2 Specification & Reference",
-		base: "/",
+		base: "/spec/",
 		themeConfig: {
 			logo: "/logo.svg",
 			nav: [
