@@ -2,14 +2,28 @@
 
 Serializes data using the given format.
 
-## Usage
+## Signature
 
-```typescript
-declare function serialize(
-  format: string,
-  plainText: string,
-  ...options: unknown[]
-): string
+```luau
+function serialize(format: string, data: any, options: SerializeOptions?): string
+```
+
+## Summary
+
+### Parameters
+
+| Parameter | Type | Description |
+| --------- | ---- | ----------- |
+| `format`  | `string` | The serialization format to use (e.g., "json", "toml", "yaml"). |
+| `data`    | `any` | The data to be serialized. |
+| `options` | `SerializeOptions?` | Optional configuration for the serialization. |
+
+## Types
+
+```luau
+type SerializeOptions = {
+    pretty: boolean?,
+}
 ```
 
 ## Example
@@ -17,10 +31,10 @@ declare function serialize(
 ### json
 
 ```lua
-local serde = include("serde")
+local serde = require("@std/serde")
 
 local luaTable = {
-    Index = true
+    Index = true,
     Array = {
       "Value1",
       "Value2"
@@ -31,7 +45,7 @@ local luaTable = {
     },
 }
 
-print(serde.serialize("json", luaTable, true)) --[[
+print(serde.serialize("json", luaTable, { pretty = true })) --[[
     {
       "Index": true,
       "Array": [
@@ -49,7 +63,7 @@ print(serde.serialize("json", luaTable, true)) --[[
 ### toml
 
 ```lua
-local serde = include("serde")
+local serde = require("@std/serde")
 
 local luaTable = {
   title = "Example",
@@ -59,7 +73,7 @@ local luaTable = {
   }
 }
 
-print(serde.serialize("toml", luaTable, true)) --[[
+print(serde.serialize("toml", luaTable)) --[[
     title = "Example"
 
     [owner]
@@ -71,7 +85,7 @@ print(serde.serialize("toml", luaTable, true)) --[[
 ### yaml
 
 ```lua
-local serde = include("serde")
+local serde = require("@std/serde")
 
 local luaTable = {
   Index = true,

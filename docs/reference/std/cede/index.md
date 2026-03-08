@@ -2,7 +2,7 @@
 
 **CeDe** stands for **Compression and Decompression**. It refers to the process of:
 
-- **Compression**: Compressing data into it's smallest form
+- **Compression**: Compressing data into its smallest form
 - **Decompression**: Reverting compressed data into a form that retains the same output
 
 ::: warning CeDe is **not** responsible for:

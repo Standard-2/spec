@@ -2,22 +2,28 @@
 
 Compresses data using a compression algorithm.
 
-## Usage
+## Signature
 
-```typescript
-declare function compress(
-  algorithm: string,
-  plainData: string
-): string
+```luau
+function compress(algorithm: string, plainData: string): string
 ```
+
+## Summary
+
+### Parameters
+
+| Parameter | Type | Description |
+| --------- | ---- | ----------- |
+| `algorithm` | `string` | The compression algorithm to use (e.g., "lz4", "zstd", "deflate"). |
+| `plainData` | `string` | The string data to compress. |
 
 ## Example
 
 ### lz4
 
 ```lua
-local cede = include("@std/cede")
-local codec = include("@std/codec")
+local cede = require("@std/cede")
+local codec = require("@std/codec")
 
 local compressed = cede.compress("lz4", "Hello, World!")
 
@@ -30,8 +36,8 @@ print(codec.encode(
 ### zstd
 
 ```lua
-local cede = include("@std/cede")
-local codec = include("@std/codec")
+local cede = require("@std/cede")
+local codec = require("@std/codec")
 
 local compressed = cede.compress("zstd", "Hello, World!")
 
@@ -44,8 +50,8 @@ print(codec.encode(
 ### deflate
 
 ```lua
-local cede = include("@std/cede")
-local codec = include("@std/codec")
+local cede = require("@std/cede")
+local codec = require("@std/codec")
 
 local compressed = cede.compress("deflate", "Hello, World!")
 

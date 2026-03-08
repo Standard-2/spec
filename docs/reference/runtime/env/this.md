@@ -2,16 +2,24 @@
 
 Returns the current, **custom** environment. This is a shared environment of all threads made by the custom lua state.
 
-## Usage
+## Signature
 
-```typescript
-let this: Record<string, unknown>
+```luau
+this: {[string]: any}
 ```
+
+## Summary
+
+### Properties
+
+| Property | Type | Description |
+| -------- | ---- | ----------- |
+| `this`   | `{[string]: any}` | The current custom environment. |
 
 ## Example
 
 ```lua
-local env = include("@runtime/env")
+local env = require("@runtime/env")
 
 env.helloworld = "Hello, World!"
 print(env.this.helloworld) -- Hello, World!

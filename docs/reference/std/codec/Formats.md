@@ -15,7 +15,7 @@ The **Codec** library supports multiple data transformation formats. Each format
 ## Example
 
 ```lua
-local codec = include("@std/codec")
+local codec = require("@std/codec")
 
 -- Base64
 local encoded = codec.encode("base64", "Hello, World!")

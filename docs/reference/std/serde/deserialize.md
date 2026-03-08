@@ -2,21 +2,27 @@
 
 Deserializes data in a given format into a parsable lua table.
 
-## Usage
+## Signature
 
-```typescript
-declare function deserialize(
-  format: string,
-  serializedText: string
-): unknown;
+```luau
+function deserialize(format: string, serializedText: string): any
 ```
+
+## Summary
+
+### Parameters
+
+| Parameter | Type | Description |
+| --------- | ---- | ----------- |
+| `format`  | `string` | The serialization format (e.g., "json", "toml", "yaml"). |
+| `serializedText` | `string` | The string to be deserialized. |
 
 ## Example
 
 ### json
 
 ```lua
-local serde = include("serde")
+local serde = require("@std/serde")
 
 local jsonText = [[
 {
@@ -42,7 +48,7 @@ print(result.Table.Index2)  --> Value2
 ### toml
 
 ```lua
-local serde = include("serde")
+local serde = require("@std/serde")
 
 local tomlText = [[
 title = "Example"
@@ -62,7 +68,7 @@ print(result.owner.dob)   --> 1979-05-27T07:32:00Z
 ### yaml
 
 ```lua
-local serde = include("serde")
+local serde = require("@std/serde")
 
 local yamlText = [[
 Index: true

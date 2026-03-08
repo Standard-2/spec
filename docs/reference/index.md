@@ -1,7 +1,3 @@
----
-title: Reference
----
-
 # Reference
 
 This section provides the formal specification and API documentation for the S2 Standard libraries.
@@ -22,7 +18,7 @@ print(env.this.S2_Is_The_Best) -- true
 
 ### `runtime`
 
-The core runtime libraires in C++, which provides the basic functionality for general-purpose programming, reverse engineering, and extending on functionality not directly provide by Roblox's API.
+The core runtime libraries in C++, which provides the basic functionality for general-purpose programming, reverse engineering, and extending on functionality not directly provided by Roblox's API.
 
 ### `std`
 

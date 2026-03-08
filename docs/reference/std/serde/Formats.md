@@ -10,10 +10,10 @@ The **SerDe** library supports multiple serialization formats.
 
 ## Additional options
 
-Some formats include additional options. </br> The options should be listed in your function call in the indice order they appear in the table below. _(After the base arguments)_
+Some formats include additional options. </br> The options should be listed in the options table, which is the third parameter. _(After the base arguments)_
 
 ### `json`
 
-| name     | description                                              | type      | default |
+| key      | description                                              | type      | default |
 | -------- | -------------------------------------------------------- | --------- | ------- |
 | `pretty` | Whether to format the data for human readability or not. | `boolean` | `false` |

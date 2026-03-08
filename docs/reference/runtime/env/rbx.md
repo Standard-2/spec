@@ -1,17 +1,25 @@
 # env.rbx
 
-Returns the entire datamodel-create lua state environment.
+Returns the entire datamodel-created lua state environment.
 
-## Usage
+## Signature
 
-```typescript
-let rbx: Record<string, unknown>
+```luau
+rbx: {[string]: any}
 ```
+
+## Summary
+
+### Properties
+
+| Property | Type | Description |
+| -------- | ---- | ----------- |
+| `rbx`    | `{[string]: any}` | The Roblox environment. |
 
 ## Example
 
 ```lua
-local env = include("@runtime/env")
+local env = require("@runtime/env")
 
 ------
 
