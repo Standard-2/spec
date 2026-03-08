@@ -16,7 +16,9 @@ export default withSidebar(
 				{ icon: "github", link: "https://github.com/Standard-2/spec" },
 			],
 		},
-		head: [["link", { rel: "icon", href: "/favicon.ico" }]],
+		head: [
+			["link", { rel: "icon", href: "/spec/favicon.ico" }]
+		],
 	}),
 	{
 		// ============ [ SIDEBAR OPTIONS ] ============
