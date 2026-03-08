@@ -5,7 +5,7 @@ Encodes data into a specific format.
 ## Signature
 
 ```luau
-function encode(format: string, data: string): string
+function encode(format: EncodingFormat, data: string): string
 ```
 
 ## Summary
@@ -14,8 +14,14 @@ function encode(format: string, data: string): string
 
 | Parameter | Type | Description |
 | --------- | ---- | ----------- |
-| `format`  | `string` | The encoding format (e.g., "base64", "hex"). |
+| `format`  | `EncodingFormat` | The encoding format. |
 | `data`    | `string` | The string data to encode. |
+
+## Types
+
+```luau
+type EncodingFormat = "base64" | "hex"
+```
 
 ## Example
 

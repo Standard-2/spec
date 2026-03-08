@@ -5,7 +5,7 @@ Decompresses compressed data using a decompression algorithm.
 ## Signature
 
 ```luau
-function decompress(algorithm: string, compressedData: string): string
+function decompress(algorithm: CompressionAlgorithm, compressedData: string): string
 ```
 
 ## Summary
@@ -14,8 +14,14 @@ function decompress(algorithm: string, compressedData: string): string
 
 | Parameter | Type | Description |
 | --------- | ---- | ----------- |
-| `algorithm` | `string` | The decompression algorithm to use (e.g., "lz4", "zstd", "deflate"). |
+| `algorithm` | `CompressionAlgorithm` | The decompression algorithm to use. |
 | `compressedData` | `string` | The compressed string data to decompress. |
+
+## Types
+
+```luau
+type CompressionAlgorithm = "lz4" | "zstd" | "deflate"
+```
 
 ## Example
 

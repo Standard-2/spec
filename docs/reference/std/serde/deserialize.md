@@ -5,7 +5,7 @@ Deserializes data in a given format into a parsable lua table.
 ## Signature
 
 ```luau
-function deserialize(format: string, serializedText: string): any
+function deserialize(format: SerializationFormat, serializedText: string): any
 ```
 
 ## Summary
@@ -14,8 +14,14 @@ function deserialize(format: string, serializedText: string): any
 
 | Parameter | Type | Description |
 | --------- | ---- | ----------- |
-| `format`  | `string` | The serialization format (e.g., "json", "toml", "yaml"). |
+| `format`  | `SerializationFormat` | The serialization format. |
 | `serializedText` | `string` | The string to be deserialized. |
+
+## Types
+
+```luau
+type SerializationFormat = "json" | "toml" | "yaml"
+```
 
 ## Example
 

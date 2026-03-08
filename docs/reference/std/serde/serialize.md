@@ -5,7 +5,7 @@ Serializes data using the given format.
 ## Signature
 
 ```luau
-function serialize(format: string, data: any, options: SerializeOptions?): string
+function serialize(format: SerializationFormat, data: any, options: SerializeOptions?): string
 ```
 
 ## Summary
@@ -14,9 +14,19 @@ function serialize(format: string, data: any, options: SerializeOptions?): strin
 
 | Parameter | Type | Description |
 | --------- | ---- | ----------- |
-| `format`  | `string` | The serialization format to use (e.g., "json", "toml", "yaml"). |
+| `format`  | `SerializationFormat` | The serialization format to use. |
 | `data`    | `any` | The data to be serialized. |
 | `options` | `SerializeOptions?` | Optional configuration for the serialization. |
+
+## Types
+
+```luau
+type SerializationFormat = "json" | "toml" | "yaml"
+
+type SerializeOptions = {
+    pretty: boolean?,
+}
+```
 
 ## Types
 

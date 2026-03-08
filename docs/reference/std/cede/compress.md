@@ -5,7 +5,7 @@ Compresses data using a compression algorithm.
 ## Signature
 
 ```luau
-function compress(algorithm: string, plainData: string): string
+function compress(algorithm: CompressionAlgorithm, plainData: string): string
 ```
 
 ## Summary
@@ -14,8 +14,14 @@ function compress(algorithm: string, plainData: string): string
 
 | Parameter | Type | Description |
 | --------- | ---- | ----------- |
-| `algorithm` | `string` | The compression algorithm to use (e.g., "lz4", "zstd", "deflate"). |
+| `algorithm` | `CompressionAlgorithm` | The compression algorithm to use. |
 | `plainData` | `string` | The string data to compress. |
+
+## Types
+
+```luau
+type CompressionAlgorithm = "lz4" | "zstd" | "deflate"
+```
 
 ## Example
 
