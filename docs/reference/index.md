@@ -14,6 +14,30 @@ Modules are organized into **Namespaces** (e.g., `std`, `runtime`, `batteries`).
 local env = require("@runtime/env") -- Accessing the 'env' module within the 'runtime' namespace.
 ```
 
+### Submodules
+
+You can also access submodules directly from the require path.
+
+```luau
+local secretbox = require("@runtime/crypto/secretbox")
+```
+
+::: info
+In these docs you will mostly see submodules being indexed instead of directly using its require path, both are valid.
+
+```luau
+-- Works
+local crypto = require("@runtime/crypto")
+local secretboxRequired = crypto.secretbox
+
+-- Also works
+local secretboxIndexed = require("@runtime/crypto/secretbox")
+
+print(secretboxRequired == secretboxIndexed) --> OUTPUT: true
+```
+
+:::
+
 ## Available Namespaces
 
 ### `runtime`
