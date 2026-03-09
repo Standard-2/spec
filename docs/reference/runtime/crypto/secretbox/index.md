@@ -1,6 +1,6 @@
 # crypto.secretbox
 
-**Secretbox** provides high-level authenticated encryption using the `xsalsa20-poly1305` construction. It is designed to be easy to use and secure by default.
+**Secretbox** provides high-level authenticated encryption using the `xsalsa20-poly1305` construction.
 
 ## Summary
 
