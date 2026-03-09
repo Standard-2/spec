@@ -8,6 +8,12 @@ Compresses data using a compression algorithm.
 function compress(algorithm: CompressionAlgorithm, plainData: string): string
 ```
 
+### Types
+
+```luau
+type CompressionAlgorithm = "lz4" | "zstd" | "deflate"
+```
+
 ## Summary
 
 ### Parameters
@@ -16,12 +22,6 @@ function compress(algorithm: CompressionAlgorithm, plainData: string): string
 | ----------- | ---------------------- | --------------------------------- |
 | `algorithm` | `CompressionAlgorithm` | The compression algorithm to use. |
 | `plainData` | `string`               | The string data to compress.      |
-
-## Types
-
-```luau
-type CompressionAlgorithm = "lz4" | "zstd" | "deflate"
-```
 
 ## Example
 

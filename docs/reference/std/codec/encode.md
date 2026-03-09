@@ -8,6 +8,12 @@ Encodes data into a specific format.
 function encode(format: EncodingFormat, data: string): string
 ```
 
+### Types
+
+```luau
+type EncodingFormat = "base64" | "hex"
+```
+
 ## Summary
 
 ### Parameters
@@ -16,12 +22,6 @@ function encode(format: EncodingFormat, data: string): string
 | --------- | ---------------- | -------------------------- |
 | `format`  | `EncodingFormat` | The encoding format.       |
 | `data`    | `string`         | The string data to encode. |
-
-## Types
-
-```luau
-type EncodingFormat = "base64" | "hex"
-```
 
 ## Example
 

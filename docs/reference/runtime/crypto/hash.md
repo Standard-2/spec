@@ -8,6 +8,12 @@ Creates a cryptographic hash of the provided data using a specified algorithm.
 function hash(algorithm: HashAlgorithm, data: string): string
 ```
 
+### Types
+
+```luau
+type HashAlgorithm = "md5" | "sha1" | "sha256" | "sha512"
+```
+
 ## Summary
 
 ### Parameters
@@ -16,12 +22,6 @@ function hash(algorithm: HashAlgorithm, data: string): string
 | ----------- | --------------- | -------------------------- |
 | `algorithm` | `HashAlgorithm` | The hash algorithm to use. |
 | `data`      | `string`        | The string data to hash.   |
-
-## Types
-
-```luau
-type HashAlgorithm = "md5" | "sha1" | "sha256" | "sha512"
-```
 
 ## Example
 

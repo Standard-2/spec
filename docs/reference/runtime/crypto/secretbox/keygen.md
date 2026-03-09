@@ -1,11 +1,11 @@
-# crypto.secretbox.keygen
+# crypto.secretbox.keyGen
 
 Generates a random key suitable for use with `secretbox.seal` and `secretbox.open`.
 
 ## Signature
 
 ```luau
-function keygen(): string
+function keyGen(): string
 ```
 
 ## Example
@@ -13,6 +13,6 @@ function keygen(): string
 ```lua
 local crypto = require("@runtime/crypto")
 
-local key = crypto.secretbox.keygen()
+local key = crypto.secretbox.keyGen()
 print(#key) -- 32
 ```

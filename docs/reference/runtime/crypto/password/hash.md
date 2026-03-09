@@ -8,6 +8,12 @@ Hashes a password using a cryptographically strong, slow hash algorithm (e.g., A
 function hash(password: string, algorithm: PasswordHashAlgorithm?): string
 ```
 
+### Types
+
+```luau
+type PasswordHashAlgorithm = "argon2id" | "bcrypt" | "scrypt"
+```
+
 ## Summary
 
 ### Parameters
@@ -16,12 +22,6 @@ function hash(password: string, algorithm: PasswordHashAlgorithm?): string
 | ----------- | ------------------------ | --------------------------------------------------------------- |
 | `password`  | `string`                 | The plain text password to hash.                                |
 | `algorithm` | `PasswordHashAlgorithm?` | The password hashing algorithm to use (defaults to "argon2id"). |
-
-## Types
-
-```luau
-type PasswordHashAlgorithm = "argon2id" | "bcrypt" | "scrypt"
-```
 
 ## Example
 

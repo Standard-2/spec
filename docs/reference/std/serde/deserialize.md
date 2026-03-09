@@ -8,6 +8,12 @@ Deserializes data in a given format into a parsable lua table.
 function deserialize(format: SerializationFormat, serializedText: string): any
 ```
 
+### Types
+
+```luau
+type SerializationFormat = "json" | "toml" | "yaml"
+```
+
 ## Summary
 
 ### Parameters
@@ -16,12 +22,6 @@ function deserialize(format: SerializationFormat, serializedText: string): any
 | ---------------- | --------------------- | ------------------------------ |
 | `format`         | `SerializationFormat` | The serialization format.      |
 | `serializedText` | `string`              | The string to be deserialized. |
-
-## Types
-
-```luau
-type SerializationFormat = "json" | "toml" | "yaml"
-```
 
 ## Example
 

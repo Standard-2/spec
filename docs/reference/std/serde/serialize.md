@@ -8,6 +8,16 @@ Serializes data using the given format.
 function serialize(format: SerializationFormat, data: any, options: SerializeOptions?): string
 ```
 
+### Types
+
+```luau
+type SerializationFormat = "json" | "toml" | "yaml"
+
+type SerializeOptions = {
+    pretty: boolean?,
+}
+```
+
 ## Summary
 
 ### Parameters
@@ -17,16 +27,6 @@ function serialize(format: SerializationFormat, data: any, options: SerializeOpt
 | `format`  | `SerializationFormat` | The serialization format to use.              |
 | `data`    | `any`                 | The data to be serialized.                    |
 | `options` | `SerializeOptions?`   | Optional configuration for the serialization. |
-
-## Types
-
-```luau
-type SerializationFormat = "json" | "toml" | "yaml"
-
-type SerializeOptions = {
-    pretty: boolean?,
-}
-```
 
 ## Example
 

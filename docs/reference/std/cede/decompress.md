@@ -8,6 +8,12 @@ Decompresses compressed data using a decompression algorithm.
 function decompress(algorithm: CompressionAlgorithm, compressedData: string): string
 ```
 
+### Types
+
+```luau
+type CompressionAlgorithm = "lz4" | "zstd" | "deflate"
+```
+
 ## Summary
 
 ### Parameters
@@ -16,12 +22,6 @@ function decompress(algorithm: CompressionAlgorithm, compressedData: string): st
 | ---------------- | ---------------------- | ----------------------------------------- |
 | `algorithm`      | `CompressionAlgorithm` | The decompression algorithm to use.       |
 | `compressedData` | `string`               | The compressed string data to decompress. |
-
-## Types
-
-```luau
-type CompressionAlgorithm = "lz4" | "zstd" | "deflate"
-```
 
 ## Example
 

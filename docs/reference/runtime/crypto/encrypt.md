@@ -8,6 +8,12 @@ Encrypts data using a cipher algorithm, key, and optional initialization vector 
 function encrypt(algorithm: CipherAlgorithm, data: string, key: string, iv: string?): string
 ```
 
+### Types
+
+```luau
+type CipherAlgorithm = "aes-256-cbc" | "aes-256-gcm" | "aes-256-ctr"
+```
+
 ## Summary
 
 ### Parameters
@@ -18,12 +24,6 @@ function encrypt(algorithm: CipherAlgorithm, data: string, key: string, iv: stri
 | `data`      | `string`          | The plain text data to encrypt.     |
 | `key`       | `string`          | The encryption key.                 |
 | `iv`        | `string?`         | The optional initialization vector. |
-
-## Types
-
-```luau
-type CipherAlgorithm = "aes-256-cbc" | "aes-256-gcm" | "aes-256-ctr"
-```
 
 ## Example
 

@@ -8,6 +8,12 @@ Decodes data from a specific format back to its original form.
 function decode(format: EncodingFormat, data: string): string
 ```
 
+### Types
+
+```luau
+type EncodingFormat = "base64" | "hex"
+```
+
 ## Summary
 
 ### Parameters
@@ -16,12 +22,6 @@ function decode(format: EncodingFormat, data: string): string
 | --------- | ---------------- | ----------------------------- |
 | `format`  | `EncodingFormat` | The encoding format.          |
 | `data`    | `string`         | The encoded string to decode. |
-
-## Types
-
-```luau
-type EncodingFormat = "base64" | "hex"
-```
 
 ## Example
 
