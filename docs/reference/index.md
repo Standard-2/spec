@@ -2,6 +2,10 @@
 
 This section provides the formal specification and API documentation for the S2 Standard libraries.
 
+::: info
+The semantics for S2's namespaced runtime is heavily inspired by [lute](https://lute.luau.org).
+:::
+
 ## Accessing libaries
 
 You can access these libraries via the `require` function.
