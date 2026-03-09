@@ -12,10 +12,10 @@ function move(pos: Vector2, relative: boolean?): ()
 
 ### Parameters
 
-| Parameter | Type      | Description                                      |
-| --------- | --------- | ------------------------------------------------ |
-| `pos`     | `Vector2` | The target coordinates.                          |
-| `relative`| `boolean?`| If true, moves relative to current position. Defaults to false. |
+| Parameter  | Type       | Description                                                     |
+| ---------- | ---------- | --------------------------------------------------------------- |
+| `pos`      | `Vector2`  | The target coordinates.                                         |
+| `relative` | `boolean?` | If true, moves relative to current position. Defaults to false. |
 
 ## Example
 

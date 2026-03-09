@@ -17,6 +17,7 @@ type MouseMoveAction = ActionBase & {
     type: "mouseMove",
     x: number,
     y: number,
+    relative: boolean?, -- Default: false
 }
 
 type MouseButtonAction = ActionBase & {
@@ -36,7 +37,7 @@ type KeyAction = ActionBase & {
 
 type WaitAction = ActionBase & {
     type: "wait",
-    duration: number,
+    duration: number, -- seconds
 }
 
 type Action = MouseMoveAction | MouseButtonAction | MouseScrollAction | KeyAction | WaitAction
@@ -55,12 +56,12 @@ type Action = MouseMoveAction | MouseButtonAction | MouseScrollAction | KeyActio
 ```lua
 local input = require("@runtime/input")
 
--- A complex sequence: move, click, and wait
 input.batch({
     { type = "mouseMove", x = 100, y = 100 },
     { type = "mousePress", button = "left" },
     { type = "wait", duration = 0.1 },
     { type = "mouseRelease", button = "left" },
+    { type = "mouseMove", x = 5, y = 0, relative = true },
     { type = "keyPress", key = Enum.KeyCode.E }
 })
 ```
