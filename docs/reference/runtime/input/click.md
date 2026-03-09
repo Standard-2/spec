@@ -12,10 +12,10 @@ function click(button: ("left" | "right" | "middle")?, pos: Vector2?): ()
 
 ### Parameters
 
-| Parameter | Type      | Description                                          |
-| --------- | --------- | ---------------------------------------------------- |
-| `button`  | `string?` | The button to click. Defaults to `"left"`.           |
-| `pos`     | `Vector2?`| Optional position to move the mouse to before clicking. |
+| Parameter | Type       | Description                                             |
+| --------- | ---------- | ------------------------------------------------------- |
+| `button`  | `string?`  | The button to click. Defaults to `"left"`.              |
+| `pos`     | `Vector2?` | Optional position to move the mouse to before clicking. |
 
 ## Example
 

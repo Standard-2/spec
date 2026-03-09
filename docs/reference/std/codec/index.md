@@ -7,12 +7,12 @@
 
 ::: warning Codec is **not** responsible for:
 
-- **Serialization** *(e.g., JSON, TOML)*
-  - Use the [serde](<../serde/index.md>) library
-- **Compression** *(e.g., LZ4, Zstd)*
-  - Use the [cede](<../cede/index.md>) library
+- **Serialization** *(e.g., json, toml, yaml)*
+  - Use the [std/serde](<../serde/index.md>) module
+- **Compression** *(e.g., lz4, zlib)*
+  - Use the [std/cede](<../cede/index.md>) module
 - **Cryptography** *(e.g., hashing, encryption)*
-  - Use the [crypto](<../../runtime/crypto/index.md>) library
+  - Use the [runtime/crypto](<../../runtime/crypto/index.md>) module
 :::
 
 ## Purpose

@@ -12,8 +12,8 @@ function scroll(pixels: number): ()
 
 ### Parameters
 
-| Parameter | Type     | Description                                               |
-| --------- | -------- | --------------------------------------------------------- |
+| Parameter | Type     | Description                                             |
+| --------- | -------- | ------------------------------------------------------- |
 | `pixels`  | `number` | The amount to scroll. Positive is up, negative is down. |
 
 ## Example

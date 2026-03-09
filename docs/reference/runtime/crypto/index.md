@@ -12,14 +12,14 @@
 ::: warning Crypto is **not** responsible for:
 
 - **Encoding** *(e.g., base64, hex)*
-  - Use the [codec](<../../std/codec/index.md>) library
+  - Use the [std/codec](<../../std/codec/index.md>) module
 - **Compression** *(e.g., lz4, zlib)*
-  - Use the [cede](<../../std/cede/index.md>) library
+  - Use the [std/cede](<../../std/cede/index.md>) module
 :::
 
 ## Purpose
 
-The `crypto` library provides essential cryptographic primitives for secure data handling, authentication, and integrity verification.
+The `crypto` module provides essential cryptographic primitives for secure data handling, authentication, and integrity verification.
 
 ## Use Cases
 

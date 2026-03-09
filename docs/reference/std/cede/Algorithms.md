@@ -1,6 +1,6 @@
 # Algorithms
 
-The **CeDe** library supports multiple compression algorithms, each with their own use cases and trade-offs.
+The **CeDe** module supports multiple compression algorithms, each with their own use cases and trade-offs.
 
 | Algorithm                                      | Compression Ratio | Compression Speed | Decompression Speed |
 | ---------------------------------------------- | ----------------- | ----------------- | ------------------- |

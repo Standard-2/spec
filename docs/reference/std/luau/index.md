@@ -1,6 +1,6 @@
 # luau
 
-The `luau` library provides access to the Luau VM's core compilation and bytecode loading capabilities.
+The `luau` module provides access to the Luau VM's core compilation and bytecode loading capabilities.
 
 ## Summary
 

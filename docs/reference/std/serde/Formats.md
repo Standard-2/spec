@@ -1,6 +1,6 @@
 # Formats
 
-The **SerDe** library supports multiple serialization formats.
+The **SerDe** module supports multiple serialization formats.
 
 | Algorithm                          |
 | ---------------------------------- |

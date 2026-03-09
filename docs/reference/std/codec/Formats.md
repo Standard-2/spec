@@ -1,6 +1,6 @@
 # Formats
 
-The **Codec** library supports multiple data transformation formats. Each format has different use cases and trade-offs.
+The **Codec** module supports multiple data transformation formats. Each format has different use cases and trade-offs.
 
 | Format     | Type              | Notes                                            |
 | ---------- | ----------------- | ------------------------------------------------ |

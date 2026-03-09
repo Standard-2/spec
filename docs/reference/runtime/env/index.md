@@ -1,6 +1,6 @@
 # env
 
-The environment library provides access to certain lua state environments.
+The environment module provides access to certain lua state environments.
 
 ## Summary
 

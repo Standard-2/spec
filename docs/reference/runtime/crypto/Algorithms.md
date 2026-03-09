@@ -1,6 +1,6 @@
 # Algorithms
 
-The **Crypto** library supports various cryptographic algorithms for hashing and encryption.
+The **Crypto** module supports various cryptographic algorithms for hashing and encryption.
 
 ## Hash Algorithms
 

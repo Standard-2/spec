@@ -22,6 +22,6 @@ S2 (Standard2) is a naming initiative designed to make custom environments feel 
 
 - **Unintuitive Environment Standards**: Many environments automatically inject functions, leading to naming conflicts and confusion.
 - **Fragmented Aliases**: Years of varied naming schemes have created environment clutter (e.g., `crypt.base64encode` vs `base64_encode`).
-- **Incorrect Namespacing**: Libraries are often disorganized, with unrelated functions grouped together.
+- **Incorrect Namespacing**: Libraries are often disorganized, with unrelated functions grouped together. S2 addresses this by enforcing a strict **Namespace/Module** hierarchy.
 
-The S2 Standard provides a clean, consistent, and logically namespaced API for developers building on custom Luau platforms. By creating a fresh spec, we can avoid the pitfalls of previous standards and rethink what makes a good API.
+The S2 Standard provides a clean, consistent, and logically structured API for developers building on Luau executors. By creating a fresh spec, we can not only avoid the pitfalls of previous standards, but implement them in a modern manner.

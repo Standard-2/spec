@@ -7,12 +7,12 @@
 
 ::: warning CeDe is **not** responsible for:
 
-- **Serialization** *(e.g., json, toml)*
-  - Use the [serde](<../serde/index.md>) library
+- **Serialization** *(e.g., json, toml, yaml)*
+  - Use the [std/serde](<../serde/index.md>) module
 - **Encoding** *(e.g., base64, hex)*
-  - Use the [codec](<../codec/index.md>) library
+  - Use the [std/codec](<../codec/index.md>) module
 - **Cryptography** *(e.g., hashing, encryption)*
-  - Use the [crypto](<../../runtime/crypto/index.md>) library
+  - Use the [runtime/crypto](<../../runtime/crypto/index.md>) module
 :::
 
 ## Purpose
