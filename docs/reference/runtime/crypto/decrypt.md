@@ -12,12 +12,12 @@ function decrypt(algorithm: CipherAlgorithm, data: string, key: string, iv: stri
 
 ### Parameters
 
-| Parameter | Type | Description |
-| --------- | ---- | ----------- |
+| Parameter   | Type              | Description                                        |
+| ----------- | ----------------- | -------------------------------------------------- |
 | `algorithm` | `CipherAlgorithm` | The cipher algorithm used for original encryption. |
-| `data`    | `string` | The encrypted data to decrypt. |
-| `key`     | `string` | The decryption key. |
-| `iv`      | `string?` | The initialization vector. |
+| `data`      | `string`          | The encrypted data to decrypt.                     |
+| `key`       | `string`          | The decryption key.                                |
+| `iv`        | `string?`         | The initialization vector.                         |
 
 ## Types
 

@@ -12,9 +12,9 @@ function hash(password: string, algorithm: PasswordHashAlgorithm?): string
 
 ### Parameters
 
-| Parameter | Type | Description |
-| --------- | ---- | ----------- |
-| `password` | `string` | The plain text password to hash. |
+| Parameter   | Type                     | Description                                                     |
+| ----------- | ------------------------ | --------------------------------------------------------------- |
+| `password`  | `string`                 | The plain text password to hash.                                |
 | `algorithm` | `PasswordHashAlgorithm?` | The password hashing algorithm to use (defaults to "argon2id"). |
 
 ## Types

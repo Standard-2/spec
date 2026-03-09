@@ -8,11 +8,11 @@
 ::: warning SerDe is **not** responsible for:
 
 - **Compression** *(e.g., lz4, zlib)*
-    - Use the [cede](<../cede/index.md>) library
+  - Use the [cede](<../cede/index.md>) library
 - **Encoding** *(e.g., base64, hex)*
-    - Use the [codec](<../codec/index.md>) library
+  - Use the [codec](<../codec/index.md>) library
 - **Cryptography** *(e.g., hashing, encryption)*
-    - Use the [crypto](<../../runtime/crypto/index.md>) library
+  - Use the [crypto](<../../runtime/crypto/index.md>) library
 :::
 
 ## Purpose

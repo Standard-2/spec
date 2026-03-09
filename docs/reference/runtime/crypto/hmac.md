@@ -12,11 +12,11 @@ function hmac(algorithm: HashAlgorithm, data: string, key: string): string
 
 ### Parameters
 
-| Parameter | Type | Description |
-| --------- | ---- | ----------- |
-| `algorithm` | `HashAlgorithm` | The hash algorithm to use. |
-| `data`    | `string` | The string data to hash. |
-| `key`     | `string` | The secret key for the HMAC. |
+| Parameter   | Type            | Description                  |
+| ----------- | --------------- | ---------------------------- |
+| `algorithm` | `HashAlgorithm` | The hash algorithm to use.   |
+| `data`      | `string`        | The string data to hash.     |
+| `key`       | `string`        | The secret key for the HMAC. |
 
 ## Types
 

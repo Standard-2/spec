@@ -12,10 +12,10 @@ function deserialize(format: SerializationFormat, serializedText: string): any
 
 ### Parameters
 
-| Parameter | Type | Description |
-| --------- | ---- | ----------- |
-| `format`  | `SerializationFormat` | The serialization format. |
-| `serializedText` | `string` | The string to be deserialized. |
+| Parameter        | Type                  | Description                    |
+| ---------------- | --------------------- | ------------------------------ |
+| `format`         | `SerializationFormat` | The serialization format.      |
+| `serializedText` | `string`              | The string to be deserialized. |
 
 ## Types
 

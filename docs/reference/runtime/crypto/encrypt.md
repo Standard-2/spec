@@ -12,12 +12,12 @@ function encrypt(algorithm: CipherAlgorithm, data: string, key: string, iv: stri
 
 ### Parameters
 
-| Parameter | Type | Description |
-| --------- | ---- | ----------- |
-| `algorithm` | `CipherAlgorithm` | The cipher algorithm to use. |
-| `data`    | `string` | The plain text data to encrypt. |
-| `key`     | `string` | The encryption key. |
-| `iv`      | `string?` | The optional initialization vector. |
+| Parameter   | Type              | Description                         |
+| ----------- | ----------------- | ----------------------------------- |
+| `algorithm` | `CipherAlgorithm` | The cipher algorithm to use.        |
+| `data`      | `string`          | The plain text data to encrypt.     |
+| `key`       | `string`          | The encryption key.                 |
+| `iv`        | `string?`         | The optional initialization vector. |
 
 ## Types
 

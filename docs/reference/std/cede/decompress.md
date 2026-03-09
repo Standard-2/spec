@@ -12,10 +12,10 @@ function decompress(algorithm: CompressionAlgorithm, compressedData: string): st
 
 ### Parameters
 
-| Parameter | Type | Description |
-| --------- | ---- | ----------- |
-| `algorithm` | `CompressionAlgorithm` | The decompression algorithm to use. |
-| `compressedData` | `string` | The compressed string data to decompress. |
+| Parameter        | Type                   | Description                               |
+| ---------------- | ---------------------- | ----------------------------------------- |
+| `algorithm`      | `CompressionAlgorithm` | The decompression algorithm to use.       |
+| `compressedData` | `string`               | The compressed string data to decompress. |
 
 ## Types
 

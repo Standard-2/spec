@@ -12,9 +12,9 @@
 ::: warning Crypto is **not** responsible for:
 
 - **Encoding** *(e.g., base64, hex)*
-    - Use the [codec](<../../std/codec/index.md>) library
+  - Use the [codec](<../../std/codec/index.md>) library
 - **Compression** *(e.g., lz4, zlib)*
-    - Use the [cede](<../../std/cede/index.md>) library
+  - Use the [cede](<../../std/cede/index.md>) library
 :::
 
 ## Purpose

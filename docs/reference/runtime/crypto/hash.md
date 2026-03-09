@@ -12,10 +12,10 @@ function hash(algorithm: HashAlgorithm, data: string): string
 
 ### Parameters
 
-| Parameter | Type | Description |
-| --------- | ---- | ----------- |
+| Parameter   | Type            | Description                |
+| ----------- | --------------- | -------------------------- |
 | `algorithm` | `HashAlgorithm` | The hash algorithm to use. |
-| `data`    | `string` | The string data to hash. |
+| `data`      | `string`        | The string data to hash.   |
 
 ## Types
 

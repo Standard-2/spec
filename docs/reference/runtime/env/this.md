@@ -1,20 +1,12 @@
 # env.this
 
-Returns the current, **custom** environment. This is a shared environment of all threads made by the custom lua state.
+Returns the current, **custom** environment made by the runtime. This is a shared environment of all threads made by the runtime's lua state.
 
 ## Signature
 
 ```luau
-this: {[string]: any}
+{[string]: any}
 ```
-
-## Summary
-
-### Properties
-
-| Property | Type | Description |
-| -------- | ---- | ----------- |
-| `this`   | `{[string]: any}` | The current custom environment. |
 
 ## Example
 

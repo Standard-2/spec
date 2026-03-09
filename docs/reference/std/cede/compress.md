@@ -12,10 +12,10 @@ function compress(algorithm: CompressionAlgorithm, plainData: string): string
 
 ### Parameters
 
-| Parameter | Type | Description |
-| --------- | ---- | ----------- |
+| Parameter   | Type                   | Description                       |
+| ----------- | ---------------------- | --------------------------------- |
 | `algorithm` | `CompressionAlgorithm` | The compression algorithm to use. |
-| `plainData` | `string` | The string data to compress. |
+| `plainData` | `string`               | The string data to compress.      |
 
 ## Types
 

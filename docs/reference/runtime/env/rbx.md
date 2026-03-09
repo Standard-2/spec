@@ -1,20 +1,12 @@
 # env.rbx
 
-Returns the entire datamodel-created lua state environment.
+Returns the Roblox created lua state environment.
 
 ## Signature
 
 ```luau
-rbx: {[string]: any}
+{[string]: any}
 ```
-
-## Summary
-
-### Properties
-
-| Property | Type | Description |
-| -------- | ---- | ----------- |
-| `rbx`    | `{[string]: any}` | The Roblox environment. |
 
 ## Example
 

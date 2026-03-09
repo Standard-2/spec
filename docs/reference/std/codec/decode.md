@@ -12,10 +12,10 @@ function decode(format: EncodingFormat, data: string): string
 
 ### Parameters
 
-| Parameter | Type | Description |
-| --------- | ---- | ----------- |
-| `format`  | `EncodingFormat` | The encoding format. |
-| `data`    | `string` | The encoded string to decode. |
+| Parameter | Type             | Description                   |
+| --------- | ---------------- | ----------------------------- |
+| `format`  | `EncodingFormat` | The encoding format.          |
+| `data`    | `string`         | The encoded string to decode. |
 
 ## Types
 
