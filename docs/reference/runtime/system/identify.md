@@ -1,5 +1,7 @@
 # system.identify
 
+The `system.identify` function returns a RuntimeIdentifier about the current runtime/executor.
+
 ## Signature
 
 ```luau
@@ -12,7 +14,6 @@ function identify(): RuntimeIdentifier
 type RuntimeIdentifier = {
     Name: string,
     Version: string,
-    Build: string,
 }
 ```
 
@@ -23,7 +24,6 @@ local system = require("@runtime/system")
 
 local identifiers = system.identify()
 
-print(identifiers.Name)
-print(identifiers.Version)
-print(identifiers.Build)
+print(identifiers.Name) --> OUTPUT: "MyExecutor"
+print(identifiers.Version) --> OUTPUT: "v1.0.0-beta.5"
 ```

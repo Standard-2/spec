@@ -53,3 +53,9 @@ else
     print("User declined.")
 end
 ```
+
+```luau
+local system = require("@runtime/system")
+
+local result = system.messageBox("Operation completed")
+```

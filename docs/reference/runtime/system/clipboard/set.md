@@ -1,11 +1,11 @@
-# system.setClipboard
+# clipboard.set
 
 Copies text to the system clipboard.
 
 ## Signature
 
 ```luau
-function setClipboard(text: string): ()
+function set(text: string): ()
 ```
 
 ## Summary
@@ -19,7 +19,7 @@ function setClipboard(text: string): ()
 ## Example
 
 ```luau
-local system = require("@runtime/system")
+local clipboard = require("@runtime/system/clipboard")
 
-system.setClipboard("Hello world")
+clipboard.set("Hello world")
 ```
