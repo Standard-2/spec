@@ -23,7 +23,7 @@ env.print = function()
     return 1
 end
 
-print(env.rbx.print) -- 1
+print(env.rbx.print()) -- 1
 
 ------
 
